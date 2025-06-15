@@ -16,22 +16,14 @@
         <TextBox x:Name="txtB" HorizontalAlignment="Center" Margin="0,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="556" FontSize="20"/>
         <Label Content="Kết quả:" HorizontalAlignment="Left" Margin="10,152,0,0" VerticalAlignment="Top" FontSize="20"/>
         <TextBlock x:Name="tbKetqua" HorizontalAlignment="Center" Margin="0,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Width="556" Background="#FF05C0FF"/>
-        <Button x:Name="btnCong"
-        Width="114" Height="42"
-        HorizontalAlignment="Left" Margin="76,244,0,0"
-        VerticalAlignment="Top" FontSize="20"
-        Click="btnCong_Click">
+        <Button x:Name="btnCong" Width="114" Height="42" HorizontalAlignment="Left" Margin="76,244,0,0" VerticalAlignment="Top" FontSize="20" Click="btnCong_Click">
             <StackPanel Orientation="Horizontal">
                 <Image Source="pack://siteoforigin:,,,/images/sum.png" Width="24" Height="24"/>
                 <TextBlock Text="Tổng" Margin="5,0" VerticalAlignment="Center"/>
             </StackPanel>
         </Button>
-        <Button x:Name="btnThoat"
-        Width="126" Height="42"
-        HorizontalAlignment="Left" Margin="288,244,0,0"
-        VerticalAlignment="Top" FontSize="20"
-        Click="btnThoat_Click">
-            <StackPanel Orientation="Horizontal">
+        <Button x:Name="btnThoat" Width="126" Height="42" HorizontalAlignment="Left" Margin="288,244,0,0" VerticalAlignment="Top" FontSize="20" Click="btnThoat_Click">
+            <StackPanel Orientation="Horizontal"> 
                 <Image Source="pack://siteoforigin:,,,/images/logout.png" Width="24" Height="24"/>
                 <TextBlock Text="Thoát" Margin="5,0" VerticalAlignment="Center"/>
             </StackPanel>
