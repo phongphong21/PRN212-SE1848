@@ -1,0 +1,42 @@
+﻿<Window x:Class="HelloWPFAPP.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HelloWPFAPP"
+        mc:Ignorable="d"
+        Title="Đăng nhập hệ thống" Height="275" Width="472" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,-9,0,3">
+        <Label Content="Đăng nhập hệ thống quản lý" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" Background="#FF0FBBEB" Width="433" HorizontalContentAlignment="Center">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF1717" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="txtUsername"
+               Target="{Binding ElementName=txtUserName}"
+               Content="Username :" HorizontalAlignment="Left" Margin="20,74,0,0" VerticalAlignment="Top" FontSize="20" Width="110"/>
+        <TextBox x:Name="txtUserName" HorizontalAlignment="Left" Margin="136,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="316" FontSize="20"/>
+        <Label x:Name="txtPassword1" Content="Password  :" HorizontalAlignment="Left" Margin="20,118,0,0" VerticalAlignment="Top" FontSize="20" Width="111"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="136,122,0,0" VerticalAlignment="Top" Width="316" FontSize="20"/>
+        <Button x:Name="btnDangNhap" Content="Đăng nhập" HorizontalAlignment="Left" Margin="104,199,0,0" VerticalAlignment="Top" FontSize="20" Width="110" Background="#FF0AE9D9" Click="btnDangNhap_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0A0A" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="btnThoat" Content="Thoát" HorizontalAlignment="Left" Margin="257,199,0,0" VerticalAlignment="Top" FontSize="20" Width="110" Background="#FF0AE9D9" Click="btnThoat_Click">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0A0A" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+
+    </Grid>
+</Window>
