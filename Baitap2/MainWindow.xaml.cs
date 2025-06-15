@@ -20,5 +20,38 @@ namespace Baitap2
         {
             InitializeComponent();
         }
+
+        private void chkToanBo_Checked(object sender, RoutedEventArgs e)
+        {
+            chkCongNghe.IsChecked = true;
+            chkDuLich.IsChecked = true;
+            chkDaBong.IsChecked = true;
+            chkXemPhim.IsChecked = true;
+        }
+        private void chkToanBo_Unchecked(object sender, RoutedEventArgs e)
+        {
+            chkCongNghe.IsChecked = false;
+            chkDuLich.IsChecked = false;
+            chkDaBong.IsChecked = false;
+            chkXemPhim.IsChecked = false;
+        }
+
+        private void chkSub_CheckedChanged(object sender, RoutedEventArgs e)
+        {
+            if (chkCongNghe.IsChecked == true &&
+                chkDuLich.IsChecked == true &&
+                chkDaBong.IsChecked == true &&
+                chkXemPhim.IsChecked == true)
+            {
+                chkToanBo.IsChecked = true; // Checked toàn bộ
+            }
+            else if (chkCongNghe.IsChecked == false &&
+                     chkDuLich.IsChecked == false &&
+                     chkDaBong.IsChecked == false &&
+                     chkXemPhim.IsChecked == false)
+            {
+                chkToanBo.IsChecked = false; // Unchecked toàn bộ
+            }
+        }
     }
 }

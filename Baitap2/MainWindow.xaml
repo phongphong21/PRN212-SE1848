@@ -5,15 +5,64 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Baitap2"
         mc:Ignorable="d"
-        Title="Se182291-Đỗ Hoàng Quốc Phong" Height="272" Width="497">
+        Title="Se182291-Đỗ Hoàng Quốc Phong" Height="233" Width="389" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="10,22,0,0" TextWrapping="Wrap" Text="Bạn thích những gì?" VerticalAlignment="Top" Width="182" FontSize="20">
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <CheckBox Content="nghiên cứu công nghê" HorizontalAlignment="Left" Margin="19,72,0,0" VerticalAlignment="Top" FontSize="20" Width="269"/>
-        <CheckBox Content="aerwe\" HorizontalAlignment="Left" Margin="23,0,0,0" VerticalAlignment="Center" Height="27" Width="92" FontSize="20" IsChecked="False"/>
+        <Label Content="Bạn thích những gì ?" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" Height="38"/>
+        <CheckBox x:Name="chkToanBo" Content="Thích toàn bộ hoạt động" HorizontalAlignment="Left" Margin="56,52,0,0" VerticalAlignment="Top" Width="184" IsChecked="False" Height="17" RenderTransformOrigin="0.5,0.5"
+                  Checked="chkToanBo_Checked" Unchecked="chkToanBo_Unchecked">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <CheckBox x:Name="chkCongNghe" Content="Thích nghiên cứu công nghệ" HorizontalAlignment="Left" Margin="45,78,0,0" VerticalAlignment="Top" IsChecked="False"
+                  Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">
+            <CheckBox.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="chkDuLich" Content="Thích đi du lịch" HorizontalAlignment="Left" Margin="45,106,0,0" VerticalAlignment="Top" IsChecked="False"
+                  Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">
+            <CheckBox.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="chkDaBong" Content="Thích đá bóng" HorizontalAlignment="Left" Margin="45,134,0,0" VerticalAlignment="Top" IsChecked="False"
+                  Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">
+            <CheckBox.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
+        <CheckBox x:Name="chkXemPhim" Content="Thích xem phim" HorizontalAlignment="Left" Margin="45,162,0,0" VerticalAlignment="Top" IsChecked="False"
+                  Checked="chkSub_CheckedChanged" Unchecked="chkSub_CheckedChanged">
+            <CheckBox.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1.5" ScaleY="1.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.LayoutTransform>
+        </CheckBox>
 
     </Grid>
 </Window>
